@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+</head>
+<style>
+     * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+        }
+.home{
+    background-color: darkred;
+    position: absolute;
+    width: 1920px;
+            height: 145px;
+            left: 0px;
+            top: 0px;
+
+        }
+        #Blood_Bank_System_ {
+            left: 59px;
+            top: 51px;
+            position: absolute;
+            overflow: visible;
+            width: 235px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #Home_t {
+            left: 1380px;
+            top: 77px;
+            position: absolute;
+            overflow: visible;
+            width: 73px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #hospital-bed {
+            position: absolute;
+            width: 39px;
+            height: 39px;
+            left: 1041px;
+            top: 76px;
+            overflow: visible;
+        }
+        #Patient {
+            left: 1520px;
+            top: 79px;
+            position: absolute;
+            overflow: visible;
+            width: 83px;
+            white-space: nowrap;
+            
+            cursor: pointer;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #donor {
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            left: 1198px;
+            top: 77px;
+            overflow: visible;
+        }
+        #Donor_x {
+            left: 1660px;
+            top: 82px;
+            position: absolute;
+            overflow: visible;
+            width: 76px;
+            white-space: nowrap;
+            --web-animation: fadein 0.3s ease-out;
+            --web-action-type: page;
+            --web-action-target: Web_1920___8.html;
+            cursor: pointer;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #Admin {
+            left: 1803px;
+            top: 84px;
+            position: absolute;
+            overflow: visible;
+            width: 79px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #n_12 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: 27px;
+            top: 60px;
+            overflow: visible;
+        }
+        #Give_Blood_Save_people {
+            left: 553px;
+            top: 145px;
+            position: absolute;
+            overflow: visible;
+            width: 943px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Ink Free;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 95px;
+            color: rgba(242,18,18,1);
+        }
+        .homepage{
+            position: absolute;
+		width: 1920px;
+		height: 818px;
+		left: 0px;
+		top: 274px;
+		overflow: visible;
+
+        }
+        #home1 {
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            left: 1338px;
+            top: 77px;
+            overflow: visible;
+        }
+        #hospital-bed {
+            position: absolute;
+            width: 39px;
+            height: 39px;
+            left: 1478px;
+            top: 76px;
+            overflow: visible;
+        }
+        #user-avatar-with-check-mark {
+            position: absolute;
+            width: 47px;
+            height: 47px;
+            left: 1755px;
+            top: 73px;
+            overflow: visible;
+        }
+        #donor {
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            left: 1618px;
+            top: 77px;
+            overflow: visible;
+        }
+        #blood {
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            left: 20px;
+            top: 55px;
+            overflow: visible;
+        }
+        .al{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        #power-off {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 1860px;
+    top: 69px;
+    overflow: visible;
+}
+#Patient_Log_Out {
+    left: 1665px;
+    top: 76px;
+    position: absolute;
+    overflow: visible;
+    width: 187px;
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Web_1920___7.html;
+    cursor: pointer;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    color: rgba(252,252,252,1);
+}
+.Rectangle_25_k {
+    position: absolute;
+    overflow: visible;
+    width: 307px;
+    height: 747px;
+    left: 0px;
+    top: 145px;
+}
+#wfaw {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 6px;
+    top: 209px;
+    overflow: visible;
+}
+#Home_lb {
+    left: 70px;
+    top: 212px;
+    position: absolute;
+    overflow: visible;
+    width: 73px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    color: rgba(252,252,252,1);
+}
+#Donor_lc {
+    left: 83px;
+    top: 305px;
+    position: absolute;
+    overflow: visible;
+    width: 76px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    color: rgba(252,252,252,1);
+}
+#Patient_ld {
+    left: 67px;
+    top: 398px;
+    position: absolute;
+    overflow: visible;
+    width: 83px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    color: rgba(252,252,252,1);
+}
+#blood-donation_le {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 9px;
+    top: 666px;
+    overflow: visible;
+}
+#Donations {
+    left: 75px;
+    top: 491px;
+    position: absolute;
+    overflow: visible;
+    width: 123px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    color: rgba(252,252,252,1);
+}
+#Blood_Stock {
+    left: 67px;
+    top: 677px;
+    position: absolute;
+    overflow: visible;
+    width: 142px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    color: rgba(252,252,252,1);
+}
+#Blood_Requests {
+    left: 67px;
+    top: 584px;
+    position: absolute;
+    overflow: visible;
+    width: 185px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    color: rgba(252,252,252,1);
+}
+#healthcare {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    left: 6px;
+    top: 476px;
+    overflow: visible;
+}
+#people {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    left: 6px;
+    top: 388px;
+    overflow: visible;
+}
+#aSad {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 9px;
+    top: 296px;
+    overflow: visible;
+}
+#efew {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 11px;
+    top: 584px;
+    overflow: visible;
+}
+#Group_9 {
+    position: absolute;
+    width: 1491px;
+    height: 607px;
+    left: 321.5px;
+    top: 160px;
+    overflow: visible;
+}
+#Rectangle_27_ln {
+    fill: rgba(212,212,212,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_27_ln {
+    position: absolute;
+    overflow: visible;
+    width: 335px;
+    height: 131px;
+    left: 397.5px;
+    top: 0px;
+}
+#Rectangle_28_lo {
+    fill: rgba(214,214,214,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_28_lo {
+    position: absolute;
+    overflow: visible;
+    width: 335px;
+    height: 131px;
+    left: 28.5px;
+    top: 177px;
+}
+#Rectangle_29_lp {
+    fill: rgba(214,214,214,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_29_lp {
+    position: absolute;
+    overflow: visible;
+    width: 335px;
+    height: 131px;
+    left: 765.5px;
+    top: 0px;
+}
+#Rectangle_29_lq {
+    fill: rgba(210,207,207,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_29_lq {
+    position: absolute;
+    overflow: visible;
+    width: 335px;
+    height: 131px;
+    left: 29.5px;
+    top: 0px;
+}
+#Rectangle_29_lr {
+    fill: rgba(210,207,207,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_29_lr {
+    position: absolute;
+    overflow: visible;
+    width: 335px;
+    height: 131px;
+    left: 1134.5px;
+    top: 476px;
+}
+#Rectangle_29_ls {
+    fill: rgba(210,207,207,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_29_ls {
+    position: absolute;
+    overflow: visible;
+    width: 335px;
+    height: 131px;
+    left: 763.5px;
+    top: 476px;
+}
+#Rectangle_29_lt {
+    fill: rgba(210,207,207,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_29_lt {
+    position: absolute;
+    overflow: visible;
+    width: 335px;
+    height: 131px;
+    left: 392.5px;
+    top: 476px;
+}
+#Rectangle_29_lu {
+    fill: rgba(210,207,207,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_29_lu {
+    position: absolute;
+    overflow: visible;
+    width: 335px;
+    height: 131px;
+    left: 21.5px;
+    top: 476px;
+}
+#Rectangle_29_lv {
+    fill: rgba(210,207,207,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_29_lv {
+    position: absolute;
+    overflow: visible;
+    width: 335px;
+    height: 131px;
+    left: 1135.5px;
+    top: 177px;
+}
+#Rectangle_29_lw {
+    fill: rgba(210,207,207,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_29_lw {
+    position: absolute;
+    overflow: visible;
+    width: 335px;
+    height: 131px;
+    left: 1133.5px;
+    top: 0px;
+}
+#Rectangle_29_lx {
+    fill: rgba(210,207,207,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_29_lx {
+    position: absolute;
+    overflow: visible;
+    width: 335px;
+    height: 131px;
+    left: 766.5px;
+    top: 177px;
+}
+#Rectangle_29_ly {
+    fill: rgba(210,207,207,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_29_ly {
+    position: absolute;
+    overflow: visible;
+    width: 335px;
+    height: 131px;
+    left: 397.5px;
+    top: 177px;
+}
+#Line_7 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_7 {
+    overflow: visible;
+    position: absolute;
+    width: 1491.002px;
+    height: 3px;
+    left: 0px;
+    top: 398.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#A {
+    left: 264.5px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 46px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    color: rgba(25,21,21,1);
+}
+#blood-drop {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 1047.5px;
+    top: 181px;
+    overflow: visible;
+}
+#blood-drop_l {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 678.5px;
+    top: 181px;
+    overflow: visible;
+}
+#blood-drop_ma {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 309.5px;
+    top: 181px;
+    overflow: visible;
+}
+#blood-drop_mb {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 1405.5px;
+    top: 7px;
+    overflow: visible;
+}
+#blood-drop_mc {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 1044.5px;
+    top: 7px;
+    overflow: visible;
+}
+#blood-drop_md {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 678.5px;
+    top: 7px;
+    overflow: visible;
+}
+#blood-drop_me {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 309.5px;
+    top: 7px;
+    overflow: visible;
+}
+#blood-drop_mf {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 1416.5px;
+    top: 181px;
+    overflow: visible;
+}
+#AB- {
+    left: 1368.5px;
+    top: 181px;
+    position: absolute;
+    overflow: visible;
+    width: 56px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    color: rgba(25,21,21,1);
+}
+#O- {
+    left: 999.5px;
+    top: 181px;
+    position: absolute;
+    overflow: visible;
+    width: 40px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    color: rgba(25,21,21,1);
+}
+#B- {
+    left: 639.5px;
+    top: 181px;
+    position: absolute;
+    overflow: visible;
+    width: 34px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    color: rgba(25,21,21,1);
+}
+#A- {
+    left: 264.5px;
+    top: 181px;
+    position: absolute;
+    overflow: visible;
+    width: 37px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    color: rgba(25,21,21,1);
+}
+#AB {
+    left: 1351.5px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 66px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    color: rgba(25,21,21,1);
+}
+#O {
+    left: 1002.5px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 50px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    color: rgba(25,21,21,1);
+}
+#B {
+    left: 623.5px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 44px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    color: rgba(25,21,21,1);
+}
+#n_ml {
+    left: 58.5px;
+    top: 77px;
+    position: absolute;
+    overflow: visible;
+    width: 37px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(25,21,21,1);
+}
+#n_ml_mh {
+    left: 1160.5px;
+    top: 247px;
+    position: absolute;
+    overflow: visible;
+    width: 37px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(25,21,21,1);
+}
+#n_ml_mi {
+    left: 793.5px;
+    top: 247px;
+    position: absolute;
+    overflow: visible;
+    width: 37px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(25,21,21,1);
+}
+#n_ml_mj {
+    left: 420.5px;
+    top: 247px;
+    position: absolute;
+    overflow: visible;
+    width: 37px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(25,21,21,1);
+}
+#n_ml_mk {
+    left: 52.5px;
+    top: 247px;
+    position: absolute;
+    overflow: visible;
+    width: 37px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(25,21,21,1);
+}
+#n_ml_ml {
+    left: 1171.5px;
+    top: 77px;
+    position: absolute;
+    overflow: visible;
+    width: 37px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(25,21,21,1);
+}
+#n_ml_mm {
+    left: 798.5px;
+    top: 77px;
+    position: absolute;
+    overflow: visible;
+    width: 37px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(25,21,21,1);
+}
+#n_ml_mn {
+    left: 434.5px;
+    top: 77px;
+    position: absolute;
+    overflow: visible;
+    width: 37px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(25,21,21,1);
+}
+#multiple-users-silhouette {
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    left: 282.5px;
+    top: 485px;
+    overflow: visible;
+}
+#Available_Donors {
+    left: 33.5px;
+    top: 538px;
+    position: absolute;
+    overflow: visible;
+    width: 165px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(25,21,21,1);
+}
+#n_ {
+    left: 33.5px;
+    top: 573px;
+    position: absolute;
+    overflow: visible;
+    width: 13px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(25,21,21,1);
+}
+#loading {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 666.5px;
+    top: 485px;
+    overflow: visible;
+}
+#Approved_Requests {
+    left: 1145.5px;
+    top: 538px;
+    position: absolute;
+    overflow: visible;
+    width: 190px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(25,21,21,1);
+}
+#Total_Blood_Unitml {
+    left: 781.5px;
+    top: 538px;
+    position: absolute;
+    overflow: visible;
+    width: 194px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(25,21,21,1);
+}
+#Total_Requests {
+    left: 405.5px;
+    top: 538px;
+    position: absolute;
+    overflow: visible;
+    width: 140px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(25,21,21,1);
+}
+#blood-drop_mv {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 1038.5px;
+    top: 480px;
+    overflow: visible;
+}
+#checked_mw {
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    left: 1406.5px;
+    top: 481px;
+    overflow: visible;
+}
+
+</style>
+<body>
+    <div class="home">
+   
+        <img id="blood" src="images/blood.png" >
+        
+        
+        <div id="Blood_Bank_System_">
+            <span>Blood Bank System </span>
+        </div>
+       
+            <img id="power-off" src="images/power-off.png" >
+            
+        <div  onclick="application.goToTargetView(event)" id="Patient_Log_Out">
+            <a class="al" href="logout.html" >Admin Log Out</a>
+        </div>
+        <svg class="Rectangle_25_k">
+            <rect id="Rectangle_25_k" rx="0" ry="0" x="0" y="0" width="307" height="862">
+            </rect>
+        </svg>
+        <img id="wfaw" src="images/wfaw.png" >
+            
+        <div id="Home_lb">
+            <span>Home</span>
+        </div>
+        <div id="Donor_lc">
+            <a class="al" href="Admin-Donors details.html" >Donor</a>
+        </div>
+        <div id="Patient_ld">
+            <a class="al" href="Admin-Patient details.html" >Patient</a>
+        </div>
+        <img id="blood-donation_le" src="images/blood-donation_le.png" >
+            
+        <div id="Donations">
+            <a class="al" href="Blood donation details.html" >Donations</a>
+        </div>
+        <div id="Blood_Stock">
+            <a class="al" href="Blood stock.html" >Blood Stock</a>
+        </div>
+        <div id="Blood_Requests">
+            <a class="al" href="Blood requested.html" >Blood Requests</a>
+        </div>
+        <img id="healthcare" src="images/healthcare.png" >
+            
+        <img id="people" src="images/people.png" >
+            
+        <img id="aSad" src="images/aSad.png" >
+            
+        <img id="efew" src="images/efew.png">
+            
+        <div id="Group_9">
+            <svg class="Rectangle_27_ln">
+                <rect id="Rectangle_27_ln" rx="0" ry="0" x="0" y="0" width="335" height="131">
+                </rect>
+            </svg>
+            <svg class="Rectangle_28_lo">
+                <rect id="Rectangle_28_lo" rx="0" ry="0" x="0" y="0" width="335" height="131">
+                </rect>
+            </svg>
+            <svg class="Rectangle_29_lp">
+                <rect id="Rectangle_29_lp" rx="0" ry="0" x="0" y="0" width="335" height="131">
+                </rect>
+            </svg>
+            <svg class="Rectangle_29_lq">
+                <rect id="Rectangle_29_lq" rx="0" ry="0" x="0" y="0" width="335" height="131">
+                </rect>
+            </svg>
+            <svg class="Rectangle_29_lr">
+                <rect id="Rectangle_29_lr" rx="0" ry="0" x="0" y="0" width="335" height="131">
+                </rect>
+            </svg>
+            <svg class="Rectangle_29_ls">
+                <rect id="Rectangle_29_ls" rx="0" ry="0" x="0" y="0" width="335" height="131">
+                </rect>
+            </svg>
+            <svg class="Rectangle_29_lt">
+                <rect id="Rectangle_29_lt" rx="0" ry="0" x="0" y="0" width="335" height="131">
+                </rect>
+            </svg>
+            <svg class="Rectangle_29_lu">
+                <rect id="Rectangle_29_lu" rx="0" ry="0" x="0" y="0" width="335" height="131">
+                </rect>
+            </svg>
+            <svg class="Rectangle_29_lv">
+                <rect id="Rectangle_29_lv" rx="0" ry="0" x="0" y="0" width="335" height="131">
+                </rect>
+            </svg>
+            <svg class="Rectangle_29_lw">
+                <rect id="Rectangle_29_lw" rx="0" ry="0" x="0" y="0" width="335" height="131">
+                </rect>
+            </svg>
+            <svg class="Rectangle_29_lx">
+                <rect id="Rectangle_29_lx" rx="0" ry="0" x="0" y="0" width="335" height="131">
+                </rect>
+            </svg>
+            <svg class="Rectangle_29_ly">
+                <rect id="Rectangle_29_ly" rx="0" ry="0" x="0" y="0" width="335" height="131">
+                </rect>
+            </svg>
+            <svg class="Line_7" viewBox="0 0 1491 2">
+                <path id="Line_7" d="M 0 2 L 1491 0">
+                </path>
+            </svg>
+            <div id="A">
+                <span>A+</span>
+            </div>
+            <img id="blood-drop" src="images/blood-drop.png" >
+                
+            <img id="blood-drop_l" src="images/blood-drop_l.png" >
+                
+            <img id="blood-drop_ma" src="images/blood-drop_ma.png" >
+                
+            <img id="blood-drop_mb" src="images/blood-drop_mb.png" >
+                
+            <img id="blood-drop_mc" src="images/blood-drop_mc.png" >
+                
+            <img id="blood-drop_md" src="images/blood-drop_md.png" >
+                
+            <img id="blood-drop_me" src="images/blood-drop_me.png" >
+                
+            <img id="blood-drop_mf" src="images/blood-drop_mf.png">
+                
+            <div id="AB-">
+                <span>AB-</span>
+            </div>
+            <div id="O-">
+                <span>O-</span>
+            </div>
+            <div id="B-">
+                <span>B-</span>
+            </div>
+            <div id="A-">
+                <span>A-</span>
+            </div>
+            <div id="AB">
+                <span>AB+</span>
+            </div>
+            <div id="O">
+                <span>O+</span>
+            </div>
+            <div id="B">
+                <span>B+</span>
+            </div>
+            <div id="n_ml">
+                <span>0ml</span>
+            </div>
+            <div id="n_ml_mh">
+                <span>0ml</span>
+            </div>
+            <div id="n_ml_mi">
+                <span>0ml</span>
+            </div>
+            <div id="n_ml_mj">
+                <span>0ml</span>
+            </div>
+            <div id="n_ml_mk">
+                <span>0ml</span>
+            </div>
+            <div id="n_ml_ml">
+                <span>0ml</span>
+            </div>
+            <div id="n_ml_mm">
+                <span>0ml</span>
+            </div>
+            <div id="n_ml_mn">
+                <span>0ml</span>
+            </div>
+            <img id="multiple-users-silhouette" src="images/multiple-users-silhouette.png" >
+                
+            <div id="Available_Donors">
+                <span>Available Donors</span>
+            </div>
+            <div id="n_">
+                <span>0</span>
+            </div>
+            <img id="loading" src="images/loading.png" >
+                
+            <div id="Approved_Requests">
+                <span>Approved Requests</span>
+            </div>
+            <div id="Total_Blood_Unitml">
+                <span>Total Blood Unit(ml)</span>
+            </div>
+            <div id="Total_Requests">
+                <span>Total Requests</span>
+            </div>
+            <img id="blood-drop_mv" src="images/blood-drop_mv.png" >
+                
+            <img id="checked_mw" src="images/checked_mw.png" >
+                
+        </div>
+    </div>
+</body>
+</html>

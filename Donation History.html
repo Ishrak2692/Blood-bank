@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation History</title>
+</head>
+<style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+        }
+.home{
+    background-color: darkred;
+    position: absolute;
+    width: 1920px;
+            height: 145px;
+            left: 0px;
+            top: 0px;
+
+        }
+        #Blood_Bank_System_ {
+            left: 59px;
+            top: 51px;
+            position: absolute;
+            overflow: visible;
+            width: 235px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #Home_t {
+            left: 1380px;
+            top: 77px;
+            position: absolute;
+            overflow: visible;
+            width: 73px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #hospital-bed {
+            position: absolute;
+            width: 39px;
+            height: 39px;
+            left: 1041px;
+            top: 76px;
+            overflow: visible;
+        }
+        #blood-donation {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    left: 7px;
+    top: 380px;
+    overflow: visible;
+}
+        #Patient {
+            left: 1520px;
+            top: 79px;
+            position: absolute;
+            overflow: visible;
+            width: 83px;
+            white-space: nowrap;
+            
+            cursor: pointer;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #donor {
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            left: 1198px;
+            top: 77px;
+            overflow: visible;
+        }
+        #Donor_x {
+            left: 1660px;
+            top: 82px;
+            position: absolute;
+            overflow: visible;
+            width: 76px;
+            white-space: nowrap;
+            --web-animation: fadein 0.3s ease-out;
+            --web-action-type: page;
+            --web-action-target: Web_1920___8.html;
+            cursor: pointer;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #Admin {
+            left: 1803px;
+            top: 84px;
+            position: absolute;
+            overflow: visible;
+            width: 79px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #n_12 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: 27px;
+            top: 60px;
+            overflow: visible;
+        }
+        #Give_Blood_Save_people {
+            left: 553px;
+            top: 145px;
+            position: absolute;
+            overflow: visible;
+            width: 943px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Ink Free;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 95px;
+            color: rgba(242,18,18,1);
+        }
+        .homepage{
+            position: absolute;
+		width: 1920px;
+		height: 818px;
+		left: 0px;
+		top: 274px;
+		overflow: visible;
+
+        }
+        #home1 {
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            left: 1338px;
+            top: 77px;
+            overflow: visible;
+        }
+        #hospital-bed {
+            position: absolute;
+            width: 39px;
+            height: 39px;
+            left: 1478px;
+            top: 76px;
+            overflow: visible;
+        }
+        #user-avatar-with-check-mark {
+            position: absolute;
+            width: 47px;
+            height: 47px;
+            left: 1755px;
+            top: 73px;
+            overflow: visible;
+        }
+        #donor {
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            left: 1618px;
+            top: 77px;
+            overflow: visible;
+        }
+        #blood {
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            left: 20px;
+            top: 55px;
+            overflow: visible;
+        }
+        .al{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        #power-off {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 1860px;
+    top: 69px;
+    overflow: visible;
+}
+#Patient_Log_Out {
+    left: 1665px;
+    top: 76px;
+    position: absolute;
+    overflow: visible;
+    width: 187px;
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Web_1920___7.html;
+    cursor: pointer;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    color: rgba(252,252,252,1);
+}
+
+#Rectangle_25 {
+    fill: rgba(25,23,23,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_25 {
+    position: absolute;
+    overflow: visible;
+    width: 307px;
+    height: 747px;
+    left: 0px;
+    top: 145px;
+}
+#wfaw {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 6px;
+    top: 270px;
+    overflow: visible;
+}
+#Home_c {
+    left: 59px;
+    top: 270px;
+    position: absolute;
+    overflow: visible;
+    width: 73px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    color: rgba(252,252,252,1);
+}
+#add-friend {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 5px;
+    top: 388px;
+    overflow: visible;
+}
+#Make_Request {
+    left: 70px;
+    top: 400px;
+    position: absolute;
+    overflow: visible;
+    width: 169px;
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Web_1920___5.html;
+    cursor: pointer;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    color: rgba(252,252,252,1);
+}
+#clock {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 7px;
+    top: 520px;
+    overflow: visible;
+}
+#Request_History {
+    left: 70px;
+    top: 540px;
+    position: absolute;
+    overflow: visible;
+    width: 188px;
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Web_1920___6.html;
+    cursor: pointer;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    color: rgba(252,252,252,1);
+}
+table, th, td {
+      border:1px solid black;
+      
+      
+    }
+    .th1{
+        background-color: black;
+        color: aliceblue;
+        width: 250px;
+        height: 60px;
+    }
+    .td1{
+       height: 50px;
+        background-color: lightgray;
+
+    }
+   
+
+    .th2{
+        background-color: black;
+        color: aliceblue;
+        width: 150px;
+
+
+    }
+    .table1{
+        top: 120px;
+        padding: 250px;
+        padding-left: 420px;
+    
+    }
+    .action{
+		  padding-left: 10px;
+		  display: flex;
+
+        display: flex;
+		flex-flow: wrap row;
+        justify-content: center;
+        align-items: center;
+	  }
+
+	  .action > div {
+		  padding-left: 20px;
+
+	  }
+	  .td-remove{
+		  background-color: rgb(129, 4, 4);
+		  border-radius: 7px;
+		  cursor: pointer;
+		  height: 37px;
+		  width: 70px;
+		  font-size: 1rem;
+	  }
+      .td-add{
+		  background-color: green;
+		  border-radius: 7px;
+		  cursor: pointer;
+		  height: 37px;
+		  width: 70px;
+		  font-size: 1rem;
+	  }
+
+</style>
+<body>
+    <div class="home">
+   
+        <img id="blood" src="images/blood.png" >
+        
+        
+        <div id="Blood_Bank_System_">
+            <span>Blood Bank System </span>
+        </div>
+       
+            <img id="power-off" src="images/power-off.png" >
+            
+        <div  onclick="application.goToTargetView(event)" id="Patient_Log_Out">
+            <a class="al" href="logout.html" >Donor Log Out</a>
+        </div>
+        
+        <svg class="Rectangle_25">
+            <rect id="Rectangle_25" rx="0" ry="0" x="0" y="0" width="307" height="947">
+            </rect>
+        </svg>
+        <img id="wfaw" src="images/wfaw.png" >
+            
+        <div id="Home_c">
+            <a class="al" href="Donor dashboard.html" >Home</a>
+        </div>
+        <img id="blood-donation" src="images/blood-donation.png" >
+            
+        <div onclick="application.goToTargetView(event)" id="Make_Request">
+            <a class="al" href="Donate Blood.html" >Donate Blood</a>
+        </div>
+        <img id="clock" src="images/clock.png" >
+            
+        <div onclick="application.goToTargetView(event)" id="Request_History">
+            <a class="al" href="Donation History.html" >Donation History</a>
+        </div>
+        <div class="table1">
+            <table style="width:100%  "  >
+                <tr>
+                  <th class="th2" ><h3>Donor's Age</h3></th>
+                  <th  class="th1" ><h3>Disease(if any)</h3></th>
+                  <th class="th1" ><h3>Blood Group</h3></th>
+                  
+                  <th class="th2" ><h3>Unit</h3></th>
+                  <th class="th1" ><h3>Date</h3></th>
+                  <th class="th1" > <h3>Status</h3> </th>
+                </tr>
+                <tr>
+                  <td class="td1" ></td>
+                  <td class="td1" ></td>
+                  <td class="td1"></td>
+                  <td class="td1" ></td>
+                  <td   class="td1" ></td>
+                  <td class="td1"> <div class="action">
+                  <div><button class="td-add">ADD</button></div>
+                  <div><button class="td-remove">REMOVE</button></div>
+                </div>
+              </td>
+                
+                 
+                  
+                </tr>
+                
+                
+              </table>
+          </div>
+
+    
+</body>
+</html>

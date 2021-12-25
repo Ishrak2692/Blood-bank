@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration</title>
+</head>
+<style>
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+        }
+.home{
+    background-color: darkred;
+    position: absolute;
+    width: 1920px;
+            height: 145px;
+            left: 0px;
+            top: 0px;
+
+        }
+        #Blood_Bank_System_ {
+            left: 59px;
+            top: 51px;
+            position: absolute;
+            overflow: visible;
+            width: 235px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #Home_t {
+            left: 1380px;
+            top: 77px;
+            position: absolute;
+            overflow: visible;
+            width: 73px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #hospital-bed {
+            position: absolute;
+            width: 39px;
+            height: 39px;
+            left: 1041px;
+            top: 76px;
+            overflow: visible;
+        }
+        #Patient {
+            left: 1520px;
+            top: 79px;
+            position: absolute;
+            overflow: visible;
+            width: 83px;
+            white-space: nowrap;
+            
+            cursor: pointer;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #donor {
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            left: 1198px;
+            top: 77px;
+            overflow: visible;
+        }
+        #Donor_x {
+            left: 1660px;
+            top: 82px;
+            position: absolute;
+            overflow: visible;
+            width: 76px;
+            white-space: nowrap;
+            --web-animation: fadein 0.3s ease-out;
+            --web-action-type: page;
+            --web-action-target: Web_1920___8.html;
+            cursor: pointer;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #Admin {
+            left: 1803px;
+            top: 84px;
+            position: absolute;
+            overflow: visible;
+            width: 79px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #n_12 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: 27px;
+            top: 60px;
+            overflow: visible;
+        }
+        #Give_Blood_Save_people {
+            left: 553px;
+            top: 145px;
+            position: absolute;
+            overflow: visible;
+            width: 943px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Ink Free;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 95px;
+            color: rgba(242,18,18,1);
+        }
+        .homepage{
+            position: absolute;
+		width: 1920px;
+		height: 818px;
+		left: 0px;
+		top: 274px;
+		overflow: visible;
+
+        }
+        #home1 {
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            left: 1338px;
+            top: 77px;
+            overflow: visible;
+        }
+        #hospital-bed {
+            position: absolute;
+            width: 39px;
+            height: 39px;
+            left: 1478px;
+            top: 76px;
+            overflow: visible;
+        }
+        #user-avatar-with-check-mark {
+            position: absolute;
+            width: 47px;
+            height: 47px;
+            left: 1755px;
+            top: 73px;
+            overflow: visible;
+        }
+        #donor {
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            left: 1618px;
+            top: 77px;
+            overflow: visible;
+        }
+        #blood {
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            left: 20px;
+            top: 55px;
+            overflow: visible;
+        }
+        #Rectangle_7 {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_7 {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 968px;
+    height: 737px;
+    left: 583px;
+    top: 160px;
+}
+#Rectangle_8 {
+    fill: rgba(39,36,36,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_8 {
+    position: absolute;
+    overflow: visible;
+    width: 950px;
+    height: 109px;
+    left: 583px;
+    top: 151px;
+}
+#PATIENT_REGISTRATION {
+    left: 800px;
+    top: 173px;
+    position: absolute;
+    overflow: visible;
+    width: 507px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Gill Sans MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39px;
+    color: rgba(252,252,252,1);
+}
+#Rectangle_9 {
+    fill: rgba(238,238,238,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_9 {
+    position: absolute;
+    overflow: visible;
+    width: 608px;
+    height: 29px;
+    left: 780px;
+    top: 296px;
+}
+#First_Name {
+    left: 650px;
+    top: 296px;
+    position: absolute;
+    overflow: visible;
+    width: 102px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Gill Sans MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    color: rgba(1,1,1,1);
+}
+#Last_Name {
+    left: 650px;
+    top: 350px;
+    position: absolute;
+    overflow: visible;
+    width: 104px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Gill Sans MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(1,1,1,1);
+}
+#Rectangle_15 {
+    fill: rgba(238,238,238,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_15 {
+    position: absolute;
+    overflow: visible;
+    width: 608px;
+    height: 29px;
+    left: 780px;
+    top: 350px;
+}
+#Rectangle_16 {
+    fill: rgba(238,238,238,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_16 {
+    position: absolute;
+    overflow: visible;
+    width: 608px;
+    height: 29px;
+    left: 780px;
+    top: 409px;
+}
+#Rectangle_17 {
+    fill: rgba(238,238,238,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_17 {
+    position: absolute;
+    overflow: visible;
+    width: 608px;
+    height: 29px;
+    left: 780px;
+    top: 468px;
+}
+#Username_ce {
+    left: 650px;
+    top: 409px;
+    position: absolute;
+    overflow: visible;
+    width: 98px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Gill Sans MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(1,1,1,1);
+}
+#Password_cf {
+    left: 650px;
+    top: 468px;
+    position: absolute;
+    overflow: visible;
+    width: 90px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Gill Sans MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(1,1,1,1);
+}
+#Rectangle_18 {
+    fill: rgba(238,238,238,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_18 {
+    position: absolute;
+    overflow: visible;
+    width: 133px;
+    height: 30px;
+    left: 780px;
+    top: 522px;
+}
+#Age {
+    left: 650px;
+    top: 524px;
+    position: absolute;
+    overflow: visible;
+    width: 38px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Gill Sans MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(1,1,1,1);
+}
+#Rectangle_19 {
+    fill: rgba(238,238,238,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_19 {
+    position: absolute;
+    overflow: visible;
+    width: 133px;
+    height: 30px;
+    left: 780px;
+    top: 577px;
+}
+#Blood_Group {
+    left: 650px;
+    top: 580px;
+    position: absolute;
+    overflow: visible;
+    width: 122px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Gill Sans MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(1,1,1,1);
+}
+#Rectangle_20 {
+    fill: rgba(238,238,238,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_20 {
+    position: absolute;
+    overflow: visible;
+    width: 608px;
+    height: 29px;
+    left: 780px;
+    top: 624px;
+}
+#Disease {
+    left: 650px;
+    top: 627px;
+    position: absolute;
+    overflow: visible;
+    width: 72px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Gill Sans MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(1,1,1,1);
+}
+#Rectangle_21 {
+    fill: rgba(238,238,238,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_21 {
+    position: absolute;
+    overflow: visible;
+    width: 780px;
+    height: 29px;
+    left: 790px;
+    top: 678px;
+}
+#Rectangle_22 {
+    fill: rgba(238,238,238,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_22 {
+    position: absolute;
+    overflow: visible;
+    width: 608px;
+    height: 29px;
+    left: 780px;
+    top: 732px;
+}
+#Rectangle_23 {
+    fill: rgba(238,238,238,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_23 {
+    position: absolute;
+    overflow: visible;
+    width: 608px;
+    height: 29px;
+    left: 780px;
+    top: 786px;
+}
+#Email-Address {
+    left: 650px;
+    top: 683px;
+    position: absolute;
+    overflow: visible;
+    width: 137px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Gill Sans MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(1,1,1,1);
+}
+#Address {
+    left: 650px;
+    top: 735px;
+    position: absolute;
+    overflow: visible;
+    width: 77px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Gill Sans MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(1,1,1,1);
+}
+#Contact_No {
+    left: 650px;
+    top: 791px;
+    position: absolute;
+    overflow: visible;
+    width: 117px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Gill Sans MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(1,1,1,1);
+}
+#Rectangle_24 {
+    fill: rgba(204,52,52,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_24 {
+    position: absolute;
+    overflow: visible;
+    width: 770px;
+    height: 37px;
+    left: 700px;
+    top: 830px;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Web_1920___2.html;
+    cursor: pointer;
+}
+#REGISTER {
+    left: 1020px;
+    top: 837px;
+    position: absolute;
+    overflow: visible;
+    width: 103px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Gill Sans MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(254,254,254,1);
+}
+.input{
+    
+    width: 620px;
+    height: 30px;
+    background-color: lightgray;
+}
+.input1{
+    width: 100px;
+    height: 30px;
+    background-color: lightgray;
+
+}
+.al{
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+</style>
+<body>
+    <div class="home">
+        
+        <img id="blood" src="images/blood.png" >
+        
+        
+        <div id="Blood_Bank_System_">
+            <span>Blood Bank System </span>
+        </div>
+        <img id="home1" src="images/home.png" >
+       
+    <div id="Home_t">
+        <a class="al" href="welcome.html" >Home</a>
+        
+        </div>
+        <img id="hospital-bed" src="images/hospital-bed.png" >
+        <div onclick="application.goToTargetView(event)" id="Patient">
+            <a class="al" href="patient.html" >Patient</a>
+        
+        </div>
+        <img id="donor" src="images/donor.png" >
+            
+        <div onclick="application.goToTargetView(event)" id="Donor_x">
+            <a class="al" href="donor.html" >Donor</a>
+        </div>
+        <img id="user-avatar-with-check-mark" src="images/user-avatar-with-check-mark.png" >
+
+        <div id="Admin">
+            <a class="al" href="Admin log in.html" >Admin</a>
+        </div>
+            <svg class="Rectangle_7">
+                <rect id="Rectangle_7" rx="24" ry="24" x="0" y="0" width="950" height="719">
+                </rect>
+            </svg>
+            <svg class="Rectangle_8">
+                <rect id="Rectangle_8" rx="13" ry="13" x="0" y="0" width="950" height="109">
+                </rect>
+            </svg>
+            <div id="PATIENT_REGISTRATION">
+                <span>PATIENT REGISTRATION</span>
+            </div>
+            <div class="Rectangle_9">
+                <input class="input" type="text" id="fname" name="fname"><br><br>
+                
+            </div>
+            </svg>
+            <div id="First_Name">
+                <span>First Name</span>
+            </div>
+            <div id="Last_Name">
+                <span>Last Name</span>
+            </div>
+            <div class="Rectangle_15">
+                <input class="input" type="text" id="fname" name="fname"><br><br>
+                
+            </div>
+            <div class="Rectangle_16">
+                <input class="input" type="text" id="fname" name="fname"><br><br>
+                
+            </div>
+            <div class="Rectangle_17">
+                <input class="input" type="password" id="fname" name="fname"><br><br>
+                
+            </div>
+            <div id="Username_ce">
+                <span>Username</span>
+            </div>
+            <div id="Password_cf">
+                <span>Password</span>
+            </div>
+            <div class="Rectangle_18">
+                <input class="input1" type="text" id="fname" name="fname"><br><br>
+                
+            </div>
+            <div id="Age">
+                <span>Age</span>
+            </div>
+            <div class="Rectangle_19">
+                <input class="input1" type="text" id="fname" name="fname"><br><br>
+                
+            </div>
+            <div id="Blood_Group">
+                <span>Blood Group</span>
+            </div>
+            <div class="Rectangle_20">
+                <input class="input1" type="text" id="fname" name="fname"><br><br>
+                
+            </div>
+            <div id="Disease">
+                <span>Disease</span>
+            </div>
+            <div class="Rectangle_21">
+                <input class="input" type="text" id="fname" name="fname"><br><br>
+                
+            </div>
+            <div class="Rectangle_22">
+                <input class="input" type="text" id="fname" name="fname"><br><br>
+                
+            </div>
+            <div class="Rectangle_23">
+                <input class="input" type="text" id="fname" name="fname"><br><br>
+                
+            </div>
+            <div id="Email-Address">
+                <span>Email-Address</span>
+            </div>
+            <div id="Address">
+                <span>Address</span>
+            </div>
+            <div id="Contact_No">
+                <span>Contact No.</span>
+            </div>
+            <svg class="Rectangle_24">
+                <rect onclick="application.goToTargetView(event)" id="Rectangle_24" rx="0" ry="0" x="0" y="0" width="770" height="37">
+                </rect>
+            </svg>
+            <div id="REGISTER">
+                <a class="al" href="patient.html" >Register </a>
+            </div>
+</body>
+</html>

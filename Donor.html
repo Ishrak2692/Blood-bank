@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor</title>
+</head>
+<style>
+    
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+        }
+.home{
+    background-color: darkred;
+    position: absolute;
+    width: 1920px;
+            height: 145px;
+            left: 0px;
+            top: 0px;
+
+        }
+        #Blood_Bank_System_ {
+            left: 59px;
+            top: 51px;
+            position: absolute;
+            overflow: visible;
+            width: 235px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #Home_t {
+            left: 1380px;
+            top: 77px;
+            position: absolute;
+            overflow: visible;
+            width: 73px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #hospital-bed {
+            position: absolute;
+            width: 39px;
+            height: 39px;
+            left: 1041px;
+            top: 76px;
+            overflow: visible;
+        }
+        #Patient {
+            left: 1520px;
+            top: 79px;
+            position: absolute;
+            overflow: visible;
+            width: 83px;
+            white-space: nowrap;
+            
+            cursor: pointer;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #donor {
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            left: 1198px;
+            top: 77px;
+            overflow: visible;
+        }
+        #Donor_x {
+            left: 1660px;
+            top: 82px;
+            position: absolute;
+            overflow: visible;
+            width: 76px;
+            white-space: nowrap;
+            --web-animation: fadein 0.3s ease-out;
+            --web-action-type: page;
+            --web-action-target: Web_1920___8.html;
+            cursor: pointer;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #Admin {
+            left: 1803px;
+            top: 84px;
+            position: absolute;
+            overflow: visible;
+            width: 79px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            color: rgba(252,252,252,1);
+        }
+        #n_12 {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: 27px;
+            top: 60px;
+            overflow: visible;
+        }
+        #Give_Blood_Save_people {
+            left: 553px;
+            top: 145px;
+            position: absolute;
+            overflow: visible;
+            width: 943px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Ink Free;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 95px;
+            color: rgba(242,18,18,1);
+        }
+        .homepage{
+            position: absolute;
+		width: 1920px;
+		height: 818px;
+		left: 0px;
+		top: 274px;
+		overflow: visible;
+
+        }
+        #home1 {
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            left: 1338px;
+            top: 77px;
+            overflow: visible;
+        }
+        #hospital-bed {
+            position: absolute;
+            width: 39px;
+            height: 39px;
+            left: 1478px;
+            top: 76px;
+            overflow: visible;
+        }
+        #user-avatar-with-check-mark {
+            position: absolute;
+            width: 47px;
+            height: 47px;
+            left: 1755px;
+            top: 73px;
+            overflow: visible;
+        }
+        #donor {
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            left: 1618px;
+            top: 77px;
+            overflow: visible;
+        }
+        #blood {
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            left: 20px;
+            top: 55px;
+            overflow: visible;
+        }
+        .Rectangle_2 {
+    position: absolute;
+    overflow: visible;
+    width: 1022px;
+    height: 501px;
+    left: 249px;
+    top: 225px;
+}
+#Rectangle_2 {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_2 {
+    position: absolute;
+    overflow: visible;
+    width: 1022px;
+    height: 501px;
+    left: 449px;
+    top: 225px;
+}
+#Rectangle_3 {
+    fill: rgba(84,70,70,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_3 {
+    position: absolute;
+    overflow: visible;
+    width: 1022px;
+    height: 84px;
+    left: 449px;
+    top: 225px;
+}
+#DONOR_LOG_IN_ {
+    left: 800px;
+    top: 246px;
+    position: absolute;
+    overflow: visible;
+    width: 352px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Gill Sans MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39px;
+    color: rgba(252,252,252,1);
+}
+#Rectangle_4 {
+    fill: rgba(242,242,242,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_4 {
+    position: absolute;
+    overflow: visible;
+    width: 591px;
+    height: 40px;
+    left: 655px;
+    top: 388px;
+}
+#Username {
+    left: 499px;
+    top: 388px;
+    position: absolute;
+    overflow: visible;
+    width: 119px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgba(1,1,1,1);
+}
+#Rectangle_5 {
+    fill: rgba(233,233,233,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_5 {
+    position: absolute;
+    overflow: visible;
+    width: 591px;
+    height: 42px;
+    left: 655px;
+    top: 476px;
+}
+#Password {
+    left: 499px;
+    top: 476px;
+    position: absolute;
+    overflow: visible;
+    width: 125px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgba(1,1,1,1);
+}
+#Rectangle_6 {
+    fill: rgba(18,168,28,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_6 {
+    position: absolute;
+    overflow: visible;
+    width: 798px;
+    height: 60px;
+    left: 572px;
+    top: 566px;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Web_1920___4.html;
+    cursor: pointer;
+}
+#LOG_IN_ {
+    left: 900px;
+    top: 574px;
+    position: absolute;
+    overflow: visible;
+    width: 120px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    color: rgba(245,245,245,1);
+}
+#Dont_have_an_account_ {
+    left: 577px;
+    top: 666px;
+    position: absolute;
+    overflow: visible;
+    width: 266px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: rgba(57,50,50,1);
+}
+#Register_Now {
+    left: 850px;
+    top: 662px;
+    position: absolute;
+    overflow: visible;
+    width: 166px;
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Web_1920___3.html;
+    cursor: pointer;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    color: rgba(13,114,229,1);
+}
+.input{
+    
+    width: 580px;
+    height: 40px;
+    background-color: lightgray;
+}
+.al{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .al1{
+            text-decoration: none;
+            color: blue;
+        }
+        
+
+</style>
+<body>
+    <div class="home">
+        
+        <img id="blood" src="images/blood.png" >
+        
+        
+        <div id="Blood_Bank_System_">
+            <span>Blood Bank System </span>
+        </div>
+        <img id="home1" src="images/home.png" >
+        <div id="Home_t">
+            <a class="al" href="welcome.html" >Home</a>
+            
+            </div>
+            <img id="hospital-bed" src="images/hospital-bed.png" >
+            <div onclick="application.goToTargetView(event)" id="Patient">
+                <a class="al" href="patient.html" >Patient</a>
+            
+            </div>
+            <img id="donor" src="images/donor.png" >
+                
+            <div onclick="application.goToTargetView(event)" id="Donor_x">
+                <span>Donor</span>
+            </div>
+            <img id="user-avatar-with-check-mark" src="images/user-avatar-with-check-mark.png" >
+    
+            <div id="Admin">
+                <a class="al" href="Admin log in.html" >Admin</a>
+            </div>
+            <svg class="Rectangle_2">
+                <rect id="Rectangle_2" rx="13" ry="13" x="0" y="0" width="1022" height="501">
+                </rect>
+            </svg>
+            <svg class="Rectangle_3">
+                <rect id="Rectangle_3" rx="0" ry="0" x="0" y="0" width="1022" height="84">
+                </rect>
+            </svg>
+            <div id="DONOR_LOG_IN_">
+                <span>DONOR LOG IN </span>
+            </div>
+            <div class="Rectangle_4">
+                <input class="input" type="text" id="fname" name="fname"><br><br>
+            </div>
+            </div>
+            <div id="Username">
+                <span>Username</span>
+            </div>
+            <div class="Rectangle_5">
+                <input class="input" type="password" id="fname" name="fname"><br><br>
+                </div>
+            </svg>
+            <div id="Password">
+                <span>Password</span>
+            </div>
+            <svg class="Rectangle_6">
+                <rect onclick="application.goToTargetView(event)" id="Rectangle_6" rx="0" ry="0" x="0" y="0" width="798" height="60">
+                </rect>
+            </svg>
+            <div id="LOG_IN_">
+                <a class="al" href="Donor dashboard.html" >LOG IN</a>
+            </div>
+            <div id="Dont_have_an_account_">
+                <span>Don't have an account ?</span>
+            </div>
+            <div onclick="application.goToTargetView(event)" id="Register_Now">
+                <a class="al1" href="Donor registration.html" >Register Now</a>
+            </div>
+        
+            
+                
+            
+            
+            
+       
+        
+    </div>
+    
+</body>
+</html>
